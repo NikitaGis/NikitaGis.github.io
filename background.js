@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500); // Adjust the duration to match transition time
     }
 
-    setInterval(changeBackground, 10000);
+    setInterval(changeBackground, 7000);
     
     changeBackground();
 });
