@@ -1,0 +1,68 @@
+html, body { font-family: "Nunito Sans", sans-serif; background-color: rgb(38, 37, 37); color: rgb(243, 233, 214); scroll-behavior: smooth;}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html {scroll-behavior: auto;}
+}
+
+#header{height: 800px; width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("../paveiksliukai/vilnius-1029640_1280.jpg");
+    background-repeat: no-repeat; background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.logo p , .logo h1 {text-align: center;}
+
+.logo h1 {text-transform: uppercase; letter-spacing: 0.3em; font-size: 80px; padding-top: 300px;}
+
+.logo p {font-size: 25px;}
+
+.navigation {
+    display: flex;           /* Activate Flexbox layout */
+    flex-direction: row;     /* Arrange items in a row */
+    flex-wrap: nowrap;       /* Prevent items from wrapping */
+    width: 100%;             /* Ensure container is wide enough */
+    height: 150px;
+    justify-content: center;
+}
+
+.navigation a {
+    color: rgb(243, 233, 214);    
+}
+
+.button {
+    text-transform: uppercase;
+    flex: 1;                 /* Distribute space equally among items */
+    min-width: 0;            /* Ensure items shrink properly */
+    border: 5px solid;
+    display: flex;         /* Flex display for centering */
+    align-items: center;   /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(69, 24, 24); /* Change color on hover */
+}
+
+h3 {font-size: 3em;}
+
+#darbai {            
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 10px; /* Optional: Adds space between the divs */
+}
+
+.darbas {text-align: center; border: 8px solid rgb(69, 24, 24); margin-top: 10px; width: 1000px;}
+
+#footer{height: 320px; width: 100%; background-color: rgb(20, 20, 20);}
+
+#footer-main {display: flex;align-items: center; flex-direction: row;}
+
+#kontaktai {width:30%; float: right; text-align: right;}
+
+#footer .logo h1, #footer .logo p {padding-top: 0; text-align: left; width: 30%;}
+
